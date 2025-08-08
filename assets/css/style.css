@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.container .addBox {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.container .addBox input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.container .addBox button {
+    padding: 10px 20px;
+    background-color: #1e3ec9;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.container .addBox button:hover {
+    background-color: blue;
+}
+
+/* .container ul {
+    padding: 20px;
+    list-style: none;
+} */
+
+.container ul li {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.container li.completed {
+    text-decoration: line-through;
+}
+
+.container .listButton {
+    margin-left: 5px;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container .listButton:hover {
+    color: gray;
+}
+
+.container .updateInput {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container .updateButton {
+    margin-left: 5px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #1e3ec9;
+    cursor: pointer;
+}
+
+.container .updateButton:hover {
+    background-color: blue;
+}
