@@ -3,7 +3,7 @@ const addButton = document.getElementById('addButton');
 const tasksList = document.getElementById('tasksList');
 
 // load tasks from localstorage when the page loads
-let tasks = JSON.parse(localStorage.getItem('tasks') || []);
+let tasks = JSON.parse(localStorage.getItem('tasks') || '[]');
 
 // function to display tasks on the page
 function renderTasks() {
@@ -25,7 +25,7 @@ function renderTasks() {
             saveButton.textContent = 'Save';
             cancleButton.textContent = 'cancel';
             saveButton.classList.add('updateButton');
-            cancleButton.classList.add('updateButton')
+            cancleButton.classList.add('updateButton');
 
             saveButton.addEventListener('click' , ()=> {
                 task.text = input.value.trim();
